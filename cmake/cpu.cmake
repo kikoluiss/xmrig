@@ -30,6 +30,7 @@ endif()
 
 if (CMAKE_SYSTEM_PROCESSOR MATCHES "^(aarch64|arm64|armv8-a|armv81)$")
     set(ARM_TARGET 8)
+    message(WARNING "setting ARM_TARGET to 8 : ${ARM_TERGET}")
 elseif (CMAKE_SYSTEM_PROCESSOR MATCHES "^(armv7|armv7f|armv7s|armv7k|armv7-a|armv7l)$")
     set(ARM_TARGET 7)
 endif()
